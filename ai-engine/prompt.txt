@@ -1,0 +1,7 @@
+Analyze the Kubernetes incident logs.
+
+Provide:
+1. Root Cause
+2. Severity
+3. Suggested Remediation
+4. Short Incident Summary

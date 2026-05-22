@@ -1,0 +1,26 @@
+groups:
+- name: kubernetes-alerts
+
+  rules:
+
+  - alert: HighCPUUsage
+    expr: sum(rate(container_cpu_usage_seconds_total[1m])) > 0.8
+    for: 1m
+
+    labels:
+      severity: critical
+
+    annotations:
+      summary: "High CPU Usage Detected"
+      description: "Container CPU usage exceeded threshold"
+
+  - alert: PodRestarting
+    expr: kube_pod_container_status_restarts_total > 3
+    for: 1m
+
+    labels:
+      severity: warning
+
+    annotations:
+      summary: "Pod Restarting Frequently"
+      description: "Pod restart count exceeded threshold"
