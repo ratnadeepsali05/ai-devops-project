@@ -22,7 +22,7 @@
   sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 - Start Cluster
-  minikube start --driver=docker
+  minikube start --driver=docker --force
 
 - Verify Cluster
   kubectl get nodes
