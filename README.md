@@ -8,3 +8,5 @@ The objective of this project is to build an AI-assisted AIOps platform capable 
 •	Generating intelligent remediation suggestions
 •	Sending enriched alerts to Slack
 •	Automating operational recovery actions
+
+
